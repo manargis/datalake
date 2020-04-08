@@ -15,7 +15,7 @@ from bokeh.models.widgets import DataTable, DateFormatter, TableColumn
 
 hover = HoverTool(tooltips=[("(Y)", "($y{0})")])
 
-connection = psycopg2.connect(user = "postgres", password = "POSTGRES", host = "localhost", port = "5432", database = "postgres")
+connection = psycopg2.connect(user = "postgres", password = "POSTGRES", host = "52.116.91.134", port = "5432", database = "postgres")
 cursor = connection.cursor()
 cursor.execute("SELECT year, pop FROM population;")
 record = cursor.fetchall()
